@@ -1,0 +1,89 @@
+.App {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' a la fuente que prefieras */
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Card-text-secondary {
+  font-size: 36px;
+  margin-top: 8px
+}
+
+.Title{
+    font-family: 'Lucida Calligraphy', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(2,0,36);
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,19,234,1) 46%, rgba(0,212,255,1) 100%);
+    font-size: 8rem;
+    margin-bottom: 8px
+}
+
+/* Estilos para el botón */
+.boton {
+    padding: 10px 20px; /* Espaciado interno para el botón */
+    background-color: #0077FF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 2rem; /* Tamaño de fuente del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+  
+  /* Cambia el color de fondo al pasar el mouse sobre el botón */
+.boton:hover {
+    background-color: #0055CC; /* Cambia el color al pasar el mouse */
+}  
+
+.link {
+  color: rgb(255, 255, 255); /* Cambia "red" al color que prefieras */
+  text-decoration: none; /* Elimina la subrayado predeterminado */
+}
+
+.link:hover {
+  color: blue; /* Cambia "blue" al color al pasar el mouse sobre el enlace */
+}
+
+.album {
+  margin-left: 100px; /* Ajusta el valor según el ancho de tu barra lateral */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los productos se envuelvan automáticamente en filas */
+  justify-content: space-around; /* Distribuye los productos equitativamente en el espacio horizontal */
+}
+
+.product {
+  display: inline-block;
+  width: 30%;
+  margin: 10px; 
+  padding: 3px;
+  border: 1px solid #ccc; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.product-container {
+  text-align: center;
+  background-color: #cececed2;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto; /* Mantén la relación de aspecto de la imagen */
+}
+
+.product-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}

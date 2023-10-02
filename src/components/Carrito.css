@@ -1,0 +1,91 @@
+/* Estilos para el contenedor principal del carrito */
+.carrito {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #c5c3c3c2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para la lista de productos en el carrito */
+  .carrito-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada elemento de producto en el carrito */
+  .carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estilos para la información del producto en el carrito */
+  .carrito-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos para la imagen del producto en el carrito */
+  .carrito-imagen {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el botón de eliminar producto en el carrito */
+  .carrito-eliminar {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el total en el carrito */
+  .carrito-total {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .product-button {
+    background-color: #0077FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Estilos para el mensaje de confirmación */
+.mensaje-confirmacion {
+    background-color: #4caf50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9; /* Asegura que el mensaje esté en la parte superior */
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .mensaje-confirmacion p {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  /* Animación de desvanecimiento para el mensaje */
+  .mensaje-confirmacion.fade-out {
+    opacity: 0;
+  }
+  

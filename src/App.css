@@ -1,0 +1,61 @@
+body {
+  background-image: url('./assets/fondo.jpg');
+  background-size: 1366px 700px;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Estilos adicionales para tu contenido */
+.inicio {
+  background-color: rgba(201, 247, 247, 0.8); /* Fondo semitransparente para el contenido */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+}
+
+.sidebar {
+  position: fixed; /* Fija la barra lateral en su lugar */
+  top: 0;
+  left: 0;
+  width: 80px; /* Ancho deseado */
+  height: 100%; /* Toma toda la altura de la pantalla */
+  background-color: #33333391;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-nav li a:hover {
+  color: #0077FF;
+}
+
+.sidebar.sidebar-hidden {
+  transform: translateX(-250px); /* Oculta la barra lateral al moverla fuera del área visible */
+}

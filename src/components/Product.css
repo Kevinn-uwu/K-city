@@ -1,0 +1,65 @@
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .product button {
+    background-color: #0077FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #0055CC;
+  }
+  
+  .mensaje {
+    background-color: #af4c91; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9; /* Asegura que el mensaje esté en la parte superior */
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .mensaje p {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  /* Animación de desvanecimiento para el mensaje */
+  .mensaje.fade-out {
+    opacity: 0;
+  }
+  
